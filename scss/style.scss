@@ -4,18 +4,11 @@
 
 body {
     background-color: lightgray;
-<<<<<<< HEAD
-}
-
-#main-wrap {
-    width: 80vw;
-=======
     margin: 0;
 }
 
 #main-wrap {
     max-width: 1400px;
->>>>>>> master
     margin: auto;
     background-color: #eee;
 }
@@ -71,8 +64,6 @@ p {
     justify-content: flex-end;
 }
 
-<<<<<<< HEAD
-=======
 .menu-appear {
     position: fixed;
     width: 100%;
@@ -80,7 +71,6 @@ p {
     @include card(2);
 }
 
->>>>>>> master
 #logo {
     padding: 10px;
     height: 3em;
@@ -104,42 +94,26 @@ p {
 // Home Page
 
 .video-box {
-<<<<<<< HEAD
-    display: flex;
-    height: 20vw;
-    padding-bottom: 20px;
-=======
     @include card(1);
     border-radius: 2px;
     display: flex;
     height: 380px;
     margin-bottom: 20px;
->>>>>>> master
     > .video-description {
         box-sizing: border-box;
         width: 50%;
         padding: 10px 10px 10px 30px;
         background-color: #ddd;
         > h2 {
-<<<<<<< HEAD
-            text-align: right;
-            margin: 0 0 5px 0;
-//            font-size: 2vw;
-=======
             padding-right: 5px;
             text-align: right;
             margin: 0 0 15px 0;
             font-size: 40px;
->>>>>>> master
         }
         > p {
             text-align: right;
             margin: 0;
-<<<<<<< HEAD
-//            font-size: 1.3vw;
-=======
             font-size: 25px;
->>>>>>> master
         }
     }
     > .embed {
@@ -157,24 +131,17 @@ p {
 
 @media (max-width: 1000px){
     .video-box{
-<<<<<<< HEAD
-        height: 60vw;
-=======
         height: 100vw;
->>>>>>> master
         flex-direction: column;
         > .video-description {
             width: 100%;
             height: 50%;
-<<<<<<< HEAD
-=======
             > h2 {
                 font-size: 6vw;
             }
             > p {
                 font-size: 4vw;
             }
->>>>>>> master
         }
         > .embed {
             width: 100%;
