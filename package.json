@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "watch-css": "node-sass -w scss/ -o public/css/"
+    "watch-css": "node-sass -w scss/ -o ."
   },
   "author": "Adam Farnell",
   "license": "ISC",
