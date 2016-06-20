@@ -4,7 +4,11 @@
         <title>Ciircus Street</title>
         <meta charset="utf-8">
         
+<<<<<<< HEAD
         <link href="https://cdn.rawgit.com/michalsnik/aos/1.0.1/dist/aos.css">
+=======
+        <link rel="stylesheet" href="vendor/aos.css">
+>>>>>>> master
         <link rel="stylesheet" href="style.css" type="text/css">
         <script src="https://use.fontawesome.com/d331963825.js"></script>
     </head>
@@ -19,10 +23,29 @@
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
         <!--Facebook JS SDK-->
+<<<<<<< HEAD
         
         <div id="main-wrap">
 
             <nav class="menu-wrap">
+=======
+        <nav class="menu-wrap menu-appear" aos="fade-down" aos-anchor=".trigger" aos-anchor-placement="bottom-top">
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#store">Store</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="menu menu-right">
+                <li><a href="https://www.facebook.com/ciircusstreet/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/Ciircus_Street" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/ciircus_street/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCOYEeWToUL8lPbv775gKKlQ" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+        <div id="main-wrap">
+            <nav class="menu-wrap trigger">
+>>>>>>> master
                 <svg 
                       id="logo" 
                       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
@@ -81,8 +104,19 @@
             <input type="text" ng-model="name" /> {{name}}
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<<<<<<< HEAD
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
         <script src="https://cdn.rawgit.com/michalsnik/aos/1.0.1/dist/aos.js"></script>
         <script src="app.js"></script>
+=======
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+        <script src="vendor/aos.js"></script>
+        <script src="app.js"></script>
+        <script>
+            AOS.init({
+                duration: 200
+            });
+        </script>
+>>>>>>> master
     </body>
 </html>
