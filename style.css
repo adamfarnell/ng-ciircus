@@ -1,10 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 body {
-  background-color: lightgray; }
+  background-color: lightgray;
+  margin: 0; }
 
 #main-wrap {
-  width: 80vw;
+  max-width: 1400px;
   margin: auto;
   background-color: #eee; }
 
@@ -46,6 +47,12 @@ p {
   margin: 16 0 16 auto;
   justify-content: flex-end; }
 
+.menu-appear {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16); }
+
 #logo {
   padding: 10px;
   height: 3em;
@@ -63,20 +70,25 @@ p {
   height: 300vh; }
 
 .video-box {
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
   display: flex;
-  height: 20vw;
-  padding-bottom: 20px; }
+  height: 380px;
+  margin-bottom: 20px; }
   .video-box > .video-description {
     box-sizing: border-box;
     width: 50%;
     padding: 10px 10px 10px 30px;
     background-color: #ddd; }
     .video-box > .video-description > h2 {
+      padding-right: 5px;
       text-align: right;
-      margin: 0 0 5px 0; }
+      margin: 0 0 15px 0;
+      font-size: 40px; }
     .video-box > .video-description > p {
       text-align: right;
-      margin: 0; }
+      margin: 0;
+      font-size: 25px; }
   .video-box > .embed {
     width: 50%;
     position: relative; }
@@ -89,11 +101,15 @@ p {
 
 @media (max-width: 1000px) {
   .video-box {
-    height: 60vw;
+    height: 100vw;
     flex-direction: column; }
     .video-box > .video-description {
       width: 100%;
       height: 50%; }
+      .video-box > .video-description > h2 {
+        font-size: 6vw; }
+      .video-box > .video-description > p {
+        font-size: 4vw; }
     .video-box > .embed {
       width: 100%;
       height: 50%; } }

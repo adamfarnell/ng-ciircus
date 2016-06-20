@@ -4,10 +4,11 @@
 
 body {
     background-color: lightgray;
+    margin: 0;
 }
 
 #main-wrap {
-    width: 80vw;
+    max-width: 1400px;
     margin: auto;
     background-color: #eee;
 }
@@ -63,6 +64,13 @@ p {
     justify-content: flex-end;
 }
 
+.menu-appear {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    @include card(2);
+}
+
 #logo {
     padding: 10px;
     height: 3em;
@@ -86,23 +94,26 @@ p {
 // Home Page
 
 .video-box {
+    @include card(1);
+    border-radius: 2px;
     display: flex;
-    height: 20vw;
-    padding-bottom: 20px;
+    height: 380px;
+    margin-bottom: 20px;
     > .video-description {
         box-sizing: border-box;
         width: 50%;
         padding: 10px 10px 10px 30px;
         background-color: #ddd;
         > h2 {
+            padding-right: 5px;
             text-align: right;
-            margin: 0 0 5px 0;
-//            font-size: 2vw;
+            margin: 0 0 15px 0;
+            font-size: 40px;
         }
         > p {
             text-align: right;
             margin: 0;
-//            font-size: 1.3vw;
+            font-size: 25px;
         }
     }
     > .embed {
@@ -120,11 +131,17 @@ p {
 
 @media (max-width: 1000px){
     .video-box{
-        height: 60vw;
+        height: 100vw;
         flex-direction: column;
         > .video-description {
             width: 100%;
             height: 50%;
+            > h2 {
+                font-size: 6vw;
+            }
+            > p {
+                font-size: 4vw;
+            }
         }
         > .embed {
             width: 100%;
