@@ -1,0 +1,14 @@
+{
+  "name": "ng-ciircus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "watch-css": "node-sass -w scss/ -o public/css/"
+  },
+  "author": "Adam Farnell",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^3.8.0"
+  }
+}
