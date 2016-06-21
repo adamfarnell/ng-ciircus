@@ -37,17 +37,27 @@ app.controller('HomeController', function ($scope, $sce) {
          embed: $sce.trustAsHtml('<iframe src="https://www.youtube.com/embed/iYFo8w9R6t0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')}
     ];
 });
-        
+
+var removeLanding = function () {
+    var img = document.getElementById("landing-image");
+    img.style.display = "none";
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+    AOS.refresh();
+};
+    
 app.controller('StoreController', function ($scope) {
     $scope.message = "testoreing testing testing";
+    removeLanding();
 });
 
 app.controller('AboutController', function ($scope) {
     $scope.message = "Abouty testing testing testing";
+    removeLanding();
 });
 
 app.controller('ContactController', function ($scope) {
     $scope.message = "contacto testing testing testing";
+    removeLanding();
 });
 
 

@@ -33,7 +33,50 @@
                 <li><a href="https://www.youtube.com/channel/UCOYEeWToUL8lPbv775gKKlQ" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
+        <div id="landing-image">
+            <svg 
+                id="landing-logo-full"
+                class="landing-logo"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+                xmlns="http://www.w3.org/2000/svg" 
+                height="11.101mm" 
+                width="92.305mm" 
+                version="1.1" 
+                xmlns:cc="http://creativecommons.org/ns#" 
+                xmlns:dc="http://purl.org/dc/elements/1.1/" 
+                viewBox="0 0 327.06564 39.332801">
+
+                <g id="layer1" transform="translate(-155.45 -860.03)">
+                    <text 
+                    id="text4138" 
+                    style="font-size:40px;letter-spacing:0px;line-height:125%;word-spacing:0px;font-family:Quicksand;fill:#ffffff" 
+                    xml:space="preserve" y="899.3241" x="152.53302">
+                        <tspan id="tspan4140" x="152.53302" y="899.3241">CIIRCUS STREET</tspan>
+                    </text>
+                    <rect id="rect4142" style="fill:#fff" transform="rotate(-45)" height="4.3563" width="4.3563" y="750.21" x="-470.42"/>
+                    <rect id="rect4152" style="fill:#fff" transform="rotate(-45)" height="4.3563" width="4.3563" y="741.59" x="-479.07"/>
+                </g>
+            </svg>
+            <svg 
+                id="landing-logo-small"
+                class="landing-logo"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns="http://www.w3.org/2000/svg"
+                height="10.871mm"
+                viewBox="0 0 18.372465 38.518558"
+                width="5.1851mm"
+                version="1.1"
+                xmlns:cc="http://creativecommons.org/ns#"
+                xmlns:dc="http://purl.org/dc/elements/1.1/">
+                <g id="layer1" transform="translate(-178.73 -860.37)">
+                    <text id="text4138" style="font-size:40px;letter-spacing:0px;word-spacing:0px;font-family:Quicksand;line-height:125%;fill:#ffffff" y="898.88483" x="176.41777" xml:space="preserve"><tspan id="tspan4140" y="898.88483" x="176.41777">II</tspan></text>
+                    <rect id="rect4142" style="fill:#fff" transform="rotate(-45)" height="4.3563" width="4.3563" y="745.56" x="-475.53"/>
+                    <rect id="rect4152" style="fill:#fff" transform="rotate(-45)" height="4.3563" width="4.3563" y="736.94" x="-484.18"/>
+                </g>
+            </svg>
+        </div>
         <div id="main-wrap">
+            
             <nav class="menu-wrap trigger">
                 <svg 
                       id="logo" 
@@ -89,9 +132,32 @@
 -->
 
             <ng-view></ng-view>
+            <section class="section social">
+                <div class="social-item">
+                    <a class="twitter-timeline" data-height="1000" href="https://twitter.com/Ciircus_Street">Tweets by Ciircus_Street</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div class="social-item">
+                    <div 
+                     class="fb-page"
+                     data-href="https://www.facebook.com/ciircusstreet/"
+                     data-tabs="timeline, events" data-small-header="false"
+                     data-adapt-container-width="true"
+                     data-hide-cover="false"
+                     data-show-facepile="true">
 
-            <input type="text" ng-model="name" /> {{name}}
+                        <blockquote cite="https://www.facebook.com/ciircusstreet/" class="fb-xfbml-parse-ignore">
+                            <a href="https://www.facebook.com/ciircusstreet/">Ciircus Street</a>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="social-item">
+                </div>
+            </section>
         </div>
+        <footer id="footer">
+            <p>Design by <a href="http://adamfarnell.co.uk/" target="_blank">Adam Farnell</a> - &copy; 2016</p>
+            
+        </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
         <script src="vendor/aos.js"></script>
