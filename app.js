@@ -22,7 +22,16 @@ app.config(function($routeProvider) {
     });
 });
 
-app.controller('HomeController', function ($scope, $sce) {
+app.run(function($rootScope){
+    $rootScope.removeLanding = function () {
+        var img = document.getElementById("landing-image");
+        img.style.display = "none";
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+        AOS.refresh();
+    };
+});
+
+app.controller('HomeController', function ($scope, $sce, $rootScope) {
     $scope.message = "testing testing testing";
     
     $scope.videos = [
@@ -36,34 +45,20 @@ app.controller('HomeController', function ($scope, $sce) {
          description: "I had a lawyer come up to see me a little while ago that said Mr. Trump, I've been doing this for 35 years and never seen what happened here. I got a call from a writer from The New York Times. I have great respect for The New York Times. And called up -- I know. I hear that. OK.",
          embed: $sce.trustAsHtml('<iframe src="https://www.youtube.com/embed/iYFo8w9R6t0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')}
     ];
-});
-
-var removeLanding = function () {
-    var img = document.getElementById("landing-image");
-    img.style.display = "none";
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
-    AOS.refresh();
-};
     
-app.controller('StoreController', function ($scope) {
+});
+    
+app.controller('StoreController', function($scope, $rootScope) {
     $scope.message = "testoreing testing testing";
-    removeLanding();
+    $rootScope.removeLanding();
 });
 
-app.controller('AboutController', function ($scope) {
+app.controller('AboutController', function ($scope, $rootScope) {
     $scope.message = "Abouty testing testing testing";
-    removeLanding();
+    $rootScope.removeLanding();
 });
 
-app.controller('ContactController', function ($scope) {
+app.controller('ContactController', function ($scope, $rootScope) {
     $scope.message = "contacto testing testing testing";
-    removeLanding();
+    $rootScope.removeLanding();
 });
-
-
-//    $scope.gigs = [
-//        {name: 'Pars and Guitars', venue: 'Purple Turtle', city: 'Reading'},
-//        {name: 'Time for Grime', venue: 'KP Stationers', city: 'Wallingford'},
-//        {name: 'Wine and Dine (and Grime)', venue: 'Phones4U', city: 'Reading'},
-//        {name: 'Gemmas Gangster Gathering', venue: 'Gemmas Yard', city: 'Leeeeds' }
-//    ];

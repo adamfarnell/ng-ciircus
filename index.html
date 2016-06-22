@@ -7,6 +7,24 @@
         <link rel="stylesheet" href="vendor/aos.css">
         <link rel="stylesheet" href="style.css" type="text/css">
         <script src="https://use.fontawesome.com/d331963825.js"></script>
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+        <link rel="manifest" href="icons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
     </head>
     <body>
         <!--Facebook JS SDK-->
@@ -21,11 +39,29 @@
         <!--Facebook JS SDK-->
         <nav class="menu-wrap menu-appear" aos="fade-down" aos-anchor=".trigger" aos-anchor-placement="bottom-top">
             <ul class="menu">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" ng-click="removeLanding()">Home</a></li>
                 <li><a href="#store">Store</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <a ng-click="removeLanding()">
+                <svg 
+                    id="logo-small"
+                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="10.871mm"
+                    viewBox="0 0 18.372465 38.518558"
+                    width="5.1851mm"
+                    version="1.1"
+                    xmlns:cc="http://creativecommons.org/ns#"
+                    xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <g id="layer1" transform="translate(-178.73 -860.37)">
+                        <text id="text4138" style="font-size:40px;letter-spacing:0px;word-spacing:0px;font-family:Quicksand;line-height:125%;fill:#ffffff" y="898.88483" x="176.41777" xml:space="preserve"><tspan id="tspan4140" y="898.88483" x="176.41777">II</tspan></text>
+                        <rect id="rect4142" style="fill:#fff" transform="rotate(-45)" height="4.3563" width="4.3563" y="745.56" x="-475.53"/>
+                        <rect id="rect4152" style="fill:#fff" transform="rotate(-45)" height="4.3563" width="4.3563" y="736.94" x="-484.18"/>
+                    </g>
+                </svg>
+            </a>
             <ul class="menu menu-right">
                 <li><a href="https://www.facebook.com/ciircusstreet/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                 <li><a href="https://twitter.com/Ciircus_Street" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -101,7 +137,7 @@
                     </g>
                 </svg>
                 <ul class="menu">
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home" ng-click="removeLanding()">Home</a></li>
                     <li><a href="#store">Store</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -114,27 +150,15 @@
                 </ul>
             </nav>
 
-<!--
-            <aside id="facebook">
-                <div 
-                     class="fb-page"
-                     data-href="https://www.facebook.com/ciircusstreet/"
-                     data-tabs="timeline, events" data-small-header="false"
-                     data-adapt-container-width="true"
-                     data-hide-cover="false"
-                     data-show-facepile="true">
-
-                    <blockquote cite="https://www.facebook.com/ciircusstreet/" class="fb-xfbml-parse-ignore">
-                        <a href="https://www.facebook.com/ciircusstreet/">Ciircus Street</a>
-                    </blockquote>
-                </div>
-            </aside>
--->
-
             <ng-view></ng-view>
             <section class="section social">
                 <div class="social-item">
-                    <a class="twitter-timeline" data-height="1000" href="https://twitter.com/Ciircus_Street">Tweets by Ciircus_Street</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <a class="twitter-timeline" data-height="600" href="https://twitter.com/Ciircus_Street">Tweets by Ciircus_Street</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div class="social-item insta">
+                    <!-- LightWidget WIDGET -->
+                    <script src="//lightwidget.com/widgets/lightwidget.js"></script>
+                    <iframe src="//lightwidget.com/widgets/ee1b22d3caea5d68a2c5bf879e6b14b7.html" id="lightwidget_ee1b22d3ca" name="lightwidget_ee1b22d3ca"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
                 </div>
                 <div class="social-item">
                     <div 
@@ -149,8 +173,6 @@
                             <a href="https://www.facebook.com/ciircusstreet/">Ciircus Street</a>
                         </blockquote>
                     </div>
-                </div>
-                <div class="social-item">
                 </div>
             </section>
         </div>
